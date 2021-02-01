@@ -1,0 +1,119 @@
+#mainNav {
+    margin-bottom: 30px;
+}
+
+a:focus{
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 3px grey;
+    font-size: 24px;
+}
+
+.botonAceptarObra , .botonDenegarObra{
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 3px 2em;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.botonAceptarObra{
+    background-color: forestgreen;
+}
+
+.botonAceptarObra:hover{
+    background-color: darkgreen;
+    color: white;
+}
+
+.botonAceptarObra:focus {
+    border: 0;
+}
+
+.botonDenegarObra{
+    background-color: #d11f1f;
+}
+
+.botonDenegarObra:hover{
+    background-color: darkred;
+}
+
+.botonCambiarEstado{
+    text-decoration: none;
+    color: white;
+    padding: 3px 10px;
+    background-color: forestgreen;
+    border-radius: 5px;
+}
+
+.botonCambiarEstado:hover{
+    background-color: darkgreen;
+}
+
+#izquierda{
+    margin-bottom: 30px;
+    border-bottom: solid black 1px;
+    padding-bottom: 30px;
+}
+
+#derecha{
+    margin-bottom: 30px;
+}
+
+#map{
+    width: 100%;
+    height: 250px;
+    border: solid black 1px;
+}
+
+@media (min-width: 451px){
+    h1{
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 768px){
+    #map{
+        height: 350px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    #izquierda {
+        border: 0;
+        width: 45%;
+    }
+
+    #derecha {
+        border-left: solid black 1px;
+        padding-left: 5%;
+        width: 50%;
+    }
+
+    #map{
+        height: 300px;
+    }
+
+    h1{
+        font-size: 38px;
+        margin-bottom: 35px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    #map{
+        height: 350px;
+    }
+}

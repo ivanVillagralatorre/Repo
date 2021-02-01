@@ -1,0 +1,100 @@
+.obra {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 2px 1px black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.titulo-obra{
+    cursor: pointer;
+}
+
+.titulo-obra p{
+    margin: 0;
+    display: inline-block;
+    width: 55%;
+    word-wrap: break-word;
+    margin-right: 5%;
+}
+
+.titulo-obra span{
+    width: 100%;
+    text-align: end;
+}
+
+.titulo-obra div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+}
+
+.titulo-obra span span{
+    color: #05a305;
+    font-weight: bold;
+}
+
+.cuerpo-obra{
+    margin-top: 20px;
+}
+
+.cuerpo-obra div {
+    margin-bottom: 10px;
+}
+
+.cuerpo-obra div div{
+    word-break: break-word;
+}
+
+.botonDescargar{
+    color: white;
+    background-color: forestgreen;
+    border: 0;
+    border-radius: 5px;
+    padding: 3px 10px;
+    word-break: break-word;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.botonDescargar:hover{
+    background-color: darkgreen;
+    color: white;
+}
+
+.botonDescargar:focus{
+    color: white;
+}
+
+@media (min-width: 768px){
+
+    .cuerpo-obra {
+        width: 90%;
+        margin: 30px auto 0 auto;
+    }
+
+    .titulo-obra{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px){
+    .cuerpo-obra {
+        width: 100%;
+    }
+    .titulo-obra{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1400px){
+    .cuerpo-obra{
+        width: 90%;
+    }
+
+    .titulo-obra{
+        width: 90%;
+    }
+}

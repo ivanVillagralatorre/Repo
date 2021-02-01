@@ -1,0 +1,19 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination li .page-link{
+    background-color: white;
+    color: #05a305;
+}
+
+.pagination li.active .page-link{
+    background-color: #05a305;
+    color: white;
+    border: solid darkgreen 1px;
+}
+
+.pagination li.disabled .page-link{
+    display: none;
+}

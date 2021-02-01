@@ -1,0 +1,304 @@
+
+
+#mainNav {
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 3px grey;
+    font-size: 24px;
+}
+
+#h1Formulario{
+    padding: 10px 0;
+    border-radius: 5px;
+    color: #fff;
+    background-color: forestgreen;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px black;
+}
+
+#h1Formulario2{
+    display: none;
+}
+
+#izquierda{
+    margin-bottom: 30px;
+    border-bottom: solid black 1px;
+    padding-bottom: 30px;
+}
+
+form{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 20px 0;
+    border: solid black 1px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 2px dimgrey;
+    justify-content: center;
+    align-items: center;
+}
+
+form > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form > div > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+form h2{
+    margin: 10px 0 20px 0;
+    font-weight: bold;
+}
+
+label{
+    margin-right: 10px;
+}
+
+select{
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input, #direccion{
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: 0;
+}
+
+input[type='file']{
+    display: none;
+}
+
+#adjuntarPlano{
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: forestgreen;
+    color: white;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#iconoArchivo{
+    display: none;
+    margin-left: 5px;
+}
+
+#div-direccion{
+    border-bottom: solid grey 1px;
+}
+
+#div-direccion label {
+    width: 82px;
+}
+
+#div-obra label {
+    width: 132px;
+}
+
+#div-descripcion{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#div-archivo{
+    justify-content: center;
+    width: 100%;
+}
+
+#div-archivo label{
+ width: auto;
+}
+
+#derecha{
+    margin-bottom: 30px;
+}
+
+#boton-formulario{
+    padding: 20px 0 10px 0;
+    border-top: solid grey 1px;
+}
+
+#boton-formulario button{
+    border: 0;
+    background-color: forestgreen;
+    border-radius: 5px;
+    width: 50%;
+    padding: 5px 0;
+    color: white;
+    font-size: 20px;
+}
+
+#boton-formulario button:hover,#adjuntarPlano:hover{
+    background-color: darkgreen;
+}
+
+
+
+
+
+@media (min-width: 451px){
+
+    h1{
+        font-size: 28px;
+    }
+
+    label,input,select {
+        font-size: 18px;
+    }
+
+    #div-direccion label {
+        width: 140px;
+    }
+
+    #div-direccion input {
+        width: 210px;
+    }
+
+    #div-direccion #direccion{
+        border: 0;
+        width: 100%;
+    }
+
+    .algolia-places{
+        border: solid black 1px;
+        border-radius: 5px;
+    }
+
+    #div-obra div{
+        justify-content: center;
+    }
+
+ #div-obra label{
+     width: 180px;
+ }
+
+    #div-archivo label{
+        width: auto;
+    }
+}
+
+@media (min-width: 768px){
+
+    h1{
+        font-size: 32px;
+    }
+
+    #div-direccion{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #izquierda h2{
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #div-direccion div{
+        width: 50%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    #div-direccion div .ap-dataset-places{
+        width: 100%;
+        display: block;
+    }
+
+    #div-direccion div .ap-dataset-places .ap-suggestions div{
+        width: 100%;
+    }
+
+    #div-direccion div label{
+        width: auto;
+    }
+
+    .algolia-places{
+       width: 90%;
+    }
+
+    #div-direccion #div-algolia{
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px){
+
+    #izquierda{
+        border: 0;
+        width: 45%;
+    }
+
+    #derecha {
+        border-left: solid black 1px;
+        padding-left: 5%;
+        width: 50%;
+    }
+
+    #h1Formulario{
+        display: none;
+    }
+
+    #h1Formulario2{
+        display: block;
+    }
+
+    h1{
+        font-size: 38px;
+        margin-bottom: 35px;
+    }
+
+    #iconoFormulario{
+        display: none;
+    }
+
+    #formulario{
+        display: block;
+    }
+
+    #div-direccion{
+        flex-direction: column;
+    }
+
+    .algolia-places{
+        width: 90%;
+    }
+}
+
+@media (min-width: 1400px){
+    #div-direccion{
+        flex-direction: row;
+    }
+
+    #div-direccion div{
+        flex-direction: column;
+    }
+
+    #div-direccion div label{
+        width: 75%;
+        text-align: left;
+    }
+}

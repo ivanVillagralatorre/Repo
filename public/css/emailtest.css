@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+}
+form {
+  color: black;
+  font-family: Montserrat-Bold;
+}
+
+h2 {
+  text-align: center;
+}
+
+input,
+label,
+button[type=submit] {
+  margin-top: 5px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+#btn {
+  background-color: forestgreen;
+}
+
+#btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*# sourceMappingURL=emailtest.css.map */
